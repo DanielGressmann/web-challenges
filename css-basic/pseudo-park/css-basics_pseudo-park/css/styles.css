@@ -33,17 +33,26 @@
 
 .animal.giraffe {
   text-align: center;
+}
+
+.animal.giraffe:hover {
   background-color: lightgreen;
 }
 
 .animal.crocodile {
   text-align: left;
-  background-color: lightblue;
 }
 
 .animal.dino {
   text-align: right;
+}
+
+.animal.dino:hover {
   background-color: lightsalmon;
+}
+
+.animal.crocodile:hover {
+  background-color: aqua;
 }
 /*
   The giraffe is afraid of the crocodile and the dino.
