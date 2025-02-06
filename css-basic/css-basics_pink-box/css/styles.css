@@ -9,9 +9,18 @@ body {
 }
 
 /* Put a selector here to select div elements (see index.html). */
-SELECTOR HERE {
+div {
   font-family: cursive;
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  margin: 15px;
+  height: 55px;
+  width: 150px;
+  color: black;
+  border-radius: 8px;
+  background-color: rgb(255, 240, 245);
 
   /* Set the height and the width of the box to 150px. */
 
