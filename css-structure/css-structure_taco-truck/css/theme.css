@@ -1,13 +1,25 @@
 :root {
   --body-bg: #fddcd2;
-
+  /*
   --header-bg: #ff4a11;
   --header-text: #3f0097;
+
 
   --main-bg: ##fddcd2;
   --main-text: #ff4a11;
   --main-title-bg: #3f0097;
 
   --card-bg: #8336ff7b;
+  */
+
   --card-text: #201e1d;
+
+  /* wireframes für Challenge 1 */
+  --header-bg: black;
+  --header-text: pink;
+
+  --main-title-bg: pink;
+  --main-text: black;
+
+  --card-bg: lime;
 }
