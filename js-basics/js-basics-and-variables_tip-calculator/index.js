@@ -21,4 +21,4 @@ let totalCost = mealCost + tipAmount;
 
 console.log("Mittagsessen:   ", mealCost, "€");
 console.log("Trinkgeld:       ", tipAmount, "€");
-console.log("Kosten insgesamt", totalCost, "Euro");
+console.log("Kosten insgesamt", totalCost, "€");
