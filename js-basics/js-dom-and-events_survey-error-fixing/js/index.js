@@ -3,7 +3,7 @@ console.clear();
 // ------------------ 1 & 2 -----------------
 
 // 1. This code selects the "next" button using an ID. This is bad practice. Can you find a better solution?
-const nextButton = document.querySelector("[data-next]"); // Classes are for CSS and "data-*" attributes are for JavaScript
+const nextButton = document.querySelector('[data-js="next-button"]'); // Classes are for CSS and "data-*" attributes are for JavaScript
 nextButton.addEventListener("click", () => {
   console.log("Go to next question");
 });
