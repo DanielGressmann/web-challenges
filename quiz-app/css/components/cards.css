@@ -1,0 +1,27 @@
+.quiz-card {
+  background-color: var(--gray-500);
+  position: relative;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+}
+
+.card__question {
+  margin-bottom: 1.5rem;
+}
+
+.card__button {
+  background-color: transparent;
+}
+
+.card__button:hover {
+  background-color: var(--gray-900);
+}
+
+.card__answer {
+  display: none;
+  text-align: center;
+}
+
+.card__answer--visible {
+  display: block;
+}

@@ -1,0 +1,31 @@
+/* Alle Haupteigenschaften */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --gray-900: #334;
+  --gray-500: #445;
+  --gray-100: #ddd;
+  --red-500: #e23b62;
+}
+
+body {
+  background-color: var(--gray-900);
+  color: var(--gray-100);
+  font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-family: "garamond", monospace;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

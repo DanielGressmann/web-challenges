@@ -1,0 +1,4 @@
+/* Import aller CSS Styles aus dem Ordner CSS */
+@import url(global.css);
+@import url(components/layout.css);
+@import url(components/cards.css);
