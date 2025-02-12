@@ -3,14 +3,15 @@ console.clear();
 // ------------------ 1 & 2 -----------------
 
 // 1. This code selects the "next" button using an ID. This is bad practice. Can you find a better solution?
-const nextButton = document.querySelector("#next");
+const nextButton = document.querySelector("[data-next]"); // Classes are for CSS and "data-*" attributes are for JavaScript
 nextButton.addEventListener("click", () => {
   console.log("Go to next question");
 });
 
 // 2. When clicking the "previous" button, this event listener is not executed. Do you know what's wrong with this code?
 const prevButton = document.querySelector('[data-js="prev-button"]');
-prevButton.addEventListener("prev", () => {
+prevButton.addEventListener("click", () => {
+  // changing "prev" to "click, because it's not a predefined Event"
   console.log("Go to previous question");
 });
 
@@ -25,12 +26,12 @@ const secondChoiceButton = document.querySelector(
 firstChoiceButton.addEventListener("click", () => {
   firstChoiceButton.classList.add("active-choice");
   secondChoiceButton.classList.remove("active-choice");
-  console("Selected first choice");
+  console.log("Selected first choice"); // add .log to console
 });
 
 // 4. When clicking on the second choice, the button should be shown with an active state. Do you see why it isn't working?
 secondChoiceButton.addEventListener("click", () => {
   firstChoiceButton.classList.remove("active-choice");
-  secondChoiceButton.classList.remove("active-choice");
+  secondChoiceButton.classList.add("active-choice"); // change remove to add
   console.log("Selected second choice");
 });
