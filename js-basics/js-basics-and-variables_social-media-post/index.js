@@ -10,11 +10,14 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
 const title = "HSV steigt eindlich auf";
 const content =
   "Kein verflixtes 7. Jahr! Der von den Fans lang ersehnte Aufstieg ist den Hamburgern endlich gelungen. In der kommenden Saison können sich die Fans nun auf Derbys gegen Stadt-Rivalen St. Pauli oder Werder Bremen freuen.";
-const likes = 7000;
+let likes = 7000;
+likes++;
 const user = "Daniel G.";
+const isReported = false; // Der Beitrag wurde nicht reported
 
 // --^-- write your code here --^--
 
@@ -23,5 +26,11 @@ const user = "Daniel G.";
 */
 
 // --v-- write your code here --v--
+
+console.log("Titel: ", title);
+console.log("Post Inhalt: ", content);
+console.log("Likes: ", likes);
+console.log("User: ", user);
+console.log("Wurde der Beitrag reported? ", isReported);
 
 // --^-- write your code here --^--
