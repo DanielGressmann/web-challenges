@@ -19,6 +19,6 @@ const mealCost = 10;
 const tipAmount = mealCost * 0.1;
 let totalCost = mealCost + tipAmount;
 
-console.log("Mittagsessen:   ", mealCost, "€");
-console.log("Trinkgeld:       ", tipAmount, "€");
-console.log("Kosten insgesamt", totalCost, "€");
+console.log("Mittagsessen:     ", mealCost, "€");
+console.log("Trinkgeld:         ", tipAmount, "€");
+console.log("Kosten insgesamt: ", totalCost, "€");
