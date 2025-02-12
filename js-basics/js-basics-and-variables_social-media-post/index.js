@@ -10,6 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const title = "HSV steigt eindlich auf";
+const content =
+  "Kein verflixtes 7. Jahr! Der von den Fans lang ersehnte Aufstieg ist den Hamburgern endlich gelungen. In der kommenden Saison können sich die Fans nun auf Derbys gegen Stadt-Rivalen St. Pauli oder Werder Bremen freuen.";
+const likes = 7000;
+const user = "Daniel G.";
 
 // --^-- write your code here --^--
 
