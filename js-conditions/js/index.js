@@ -20,16 +20,16 @@ if (number % 2 === 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 42;
+const numberOfHotdogs = 5;
 
 if (numberOfHotdogs < 5) {
-  console.log("2 Euro pro Hotdog");
-} else if (numberOfHotdogs > 4 && numberOfHotdogs < 100) {
-  console.log("1.50 Euro pro Hotdog");
-} else if (numberOfHotdogs > 99 && numberOfHotdogs < 1000000) {
-  console.log("1 Euro pro Hotdog");
+  console.log(numberOfHotdogs * 2);
+} else if (numberOfHotdogs < 100) {
+  console.log(numberOfHotdogs * 1.5);
+} else if (numberOfHotdogs < 1000000) {
+  console.log(numberOfHotdogs * 1);
 } else {
-  console.log("0.10 Euro pro Hotdog");
+  console.log(numberOfHotdogs * 0.1);
 }
 
 // Part 4: Daytime
