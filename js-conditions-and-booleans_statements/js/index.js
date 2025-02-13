@@ -20,13 +20,13 @@ if (number % 2 === 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 5;
+const numberOfHotdogs = 100;
 
 if (numberOfHotdogs < 5) {
   console.log("2 Euro pro Hotdog");
 } else if (numberOfHotdogs > 4 && numberOfHotdogs < 100) {
   console.log("1.50 Euro pro Hotdog");
-} else if (numberOfHotdogs > 100 && numberOfHotdogs < 1000000) {
+} else if (numberOfHotdogs > 99 && numberOfHotdogs < 1000000) {
   console.log("1 Euro pro Hotdog");
 } else {
   console.log("0.10 Euro pro Hotdog");
