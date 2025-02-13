@@ -20,7 +20,7 @@ if (number % 2 === 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 100;
+const numberOfHotdogs = 42;
 
 if (numberOfHotdogs < 5) {
   console.log("2 Euro pro Hotdog");
