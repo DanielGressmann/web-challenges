@@ -2,7 +2,7 @@ console.clear();
 
 const people = [
   {
-    name: "Homer",
+    name: "Homer Simp",
     age: 39,
     parents: { mothersName: "Mona", fathersName: "Abe" },
     pet: { animal: "dog", name: "Santa's Little Helper" },
