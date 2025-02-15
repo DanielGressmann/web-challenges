@@ -38,3 +38,6 @@ console.log(
   percentageLived,
   "percent of his total life span"
 );
+
+const sleepingDays = ((currentAge * 365 * 8) / 24).toFixed(0);
+console.log("Max has slept approximately", sleepingDays, "Tage until now");
