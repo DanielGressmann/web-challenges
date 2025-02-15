@@ -22,8 +22,19 @@ const currentAge = Number(process.argv[2]); // This takes the `<age>` entered in
 console.log("Your current age is: " + currentAge);
 
 const livingDays = currentAge * 365;
+console.log("Max has lived", livingDays, "Days since he was born");
 
 const lifeExpectancy = 80;
 const remainingDays = (lifeExpectancy - currentAge) * 365;
+console.log(
+  "If Max lives up to his 80th Birthday, he has",
+  remainingDays,
+  "Days left."
+);
 
 const percentageLived = ((currentAge / lifeExpectancy) * 100).toFixed(2);
+console.log(
+  "Max has already spent",
+  percentageLived,
+  "percent of his total life span"
+);
