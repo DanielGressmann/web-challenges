@@ -5,6 +5,8 @@ const form = document.querySelector('[data-js="form"]');
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+const formElement = event.target
+
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
@@ -12,6 +14,7 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
 });
+
 
 // const age = Number(data.age) || 0;
 // const badness = Number(data.badness) || 0;
