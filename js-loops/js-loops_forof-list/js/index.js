@@ -18,7 +18,7 @@ const programmingLanguages = [
 // --v-- write or modify code below this line --v--
 for (const language of programmingLanguages) {
   // durch die Liste iterieren
-  const li = document.createElement("li"); //<li> Element ersteellen
+  const li = document.createElement("li"); //<li> Element erstellen
   li.textContent = language;
   ol.appendChild(li);
 }
