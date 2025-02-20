@@ -52,6 +52,7 @@ for (const key in nav) {
   const li = document.createElement("li");
   const a = document.createElement("a");
 
+  // a.setAttribute("href", nav[key].href); funktioniert wie Zeile 58 sagt CHAT GPT
   a.href = nav[key].href;
   a.textContent = nav[key].text;
 
