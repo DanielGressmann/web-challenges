@@ -20,5 +20,11 @@ form.addEventListener("submit", (event) => {
   const firstNumber = Number(event.target.firstNumber.value);
   const secondNumber = Number(event.target.secondNumber.value);
   const operation = event.target.operation.value;
-  output.innerText = operations[operation](firstNumber, secondNumber);
+  try {
+    // try…catch hinzufügen zum Event
+    output.innerText = operations[operation](firstNumber, secondNumber);
+  } catch (error) {
+    output.innerText = error.message;
+    console.log(error); // Als Test
+  }
 });
