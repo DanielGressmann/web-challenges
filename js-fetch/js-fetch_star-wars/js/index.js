@@ -3,6 +3,8 @@ import { renderElement } from "./utils.js";
 
 console.clear();
 
+const url = "https://swapi.py4e.com/api/people";
+
 const EXAMPLE_DATA = {
   name: "Luke Skywalker",
   height: "172",
@@ -41,6 +43,17 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  const response = await fetch(url); // API Daten abrufen
+  const data = await response.json(); // In JS umwandeln
+
+  console.log("All Data", data);
+
+  data.results.forEach((character) => {
+    const characterCard = Card(character); // Karte mit Charakter erstellen
+    renderElement(characterCard); // Karte in DOM rendern
+  });
+
+  // ALTERNATIVE
+  // data.results.map(Card).forEach(renderElement);
 }
