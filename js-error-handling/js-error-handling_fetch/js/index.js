@@ -7,6 +7,16 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
+    const contentType = response.headers.get("content-type");
+
+    if (!contentType || !response.ok) { // implement logical NOT-OPERATOR "!"
+      throw new Error (`Error Status Code: ${response.status}`);
+    }
+
+    // Bonusaufgabe: Überprüfen auf falschen Content-Type
+   if (!contentType.includes("application/json")) {
+    throw new Error(`Wrong content: ${contentType}`)
+   }
 
     return await response.json();
   } catch (error) {
