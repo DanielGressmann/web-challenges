@@ -9,15 +9,23 @@ async function fetchUserData(url) {
     const response = await fetch(url);
     const contentType = response.headers.get("content-type");
 
-    if (!response.ok) {
-      // implement logical NOT-OPERATOR "!"
-      throw new Error(`Error Status Code: ${response.status}`);
-    }
+    // if (!response.ok) {
+    //   // implement logical NOT-OPERATOR "!"
+    //   throw new Error(`Error Status Code: ${response.status}`);
+    // }
 
-    // Bonusaufgabe: Überprüfen auf falschen Content-Type
-    if (!contentType.includes("json")) {
-      // If content does not include a json file…
-      throw new Error(`Expected JSON: ${contentType}`); // throw this error message
+    // // Bonusaufgabe: Überprüfen auf falschen Content-Type
+    // if (!contentType.includes("json")) {
+    //   // If content does not include a json file…
+    //   throw new Error(`Expected JSON: ${contentType}`); // throw this error message
+    // }
+
+    // Part 1 and Bonuspart combined:
+
+    if (!response.ok) {
+      throw new Error(`Error Status Code: ${response.status}`);
+    } else if (!contentType.includes("json")) {
+      throw new Error(`Expected JSON: ${contentType}`);
     }
 
     return await response.json();
