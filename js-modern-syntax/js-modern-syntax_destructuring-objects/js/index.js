@@ -6,13 +6,13 @@ Extract only the course name from the `company` object.
 Make sure to export your variable as shown in the example below for the tests to work.
 */
 
-export const company = {
+const company = {
   name: "TechAcademy",
   course: "Web Development",
   location: "Hamburg",
 };
 
-const { name } = company;
+export const { name } = company;
 console.log(name);
 
 // Example: export const { value1 } = myObject;
