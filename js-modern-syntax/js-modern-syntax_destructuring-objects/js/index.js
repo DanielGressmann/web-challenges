@@ -6,11 +6,14 @@ Extract only the course name from the `company` object.
 Make sure to export your variable as shown in the example below for the tests to work.
 */
 
-const company = {
+export const company = {
   name: "TechAcademy",
   course: "Web Development",
   location: "Hamburg",
 };
+
+const { name } = company;
+console.log(name);
 
 // Example: export const { value1 } = myObject;
 
@@ -26,6 +29,11 @@ Use destructuring to extract the following:
 
 const user = { name: "John", years: 30 };
 
+const { name: userName, years, isAdmin = false } = user;
+console.log(userName);
+console.log(years);
+console.log(isAdmin);
+
 /*
 EXERCISE 3
 Extract properties from the dog object and
@@ -37,6 +45,11 @@ const dog = {
   breed: "husky",
   age: 5,
 };
+
+const { name: dogName, breed: dogBreed, age: dogAge } = dog;
+console.log(dogName);
+console.log(dogBreed);
+console.log(dogAge);
 
 /*
 EXERCISE 4
@@ -50,6 +63,10 @@ const person = {
   firstName: "Alex",
 };
 
+const { lastName: personLastName, ...moreInformation } = person;
+console.log(personLastName);
+console.log(moreInformation);
+
 /*
 EXERCISE 5
 Refactor the following function to use destructuring assignment for the
@@ -58,9 +75,10 @@ Hint: You may need to rename one property during destructuring.
 */
 
 export function logInfo(city) {
-  const name = city.name;
-  const country = city.country;
-  const numPeople = city.population;
+  const { name, country, population: numPeople } = city;
+  // const name = city.name;
+  // const country = city.country;
+  // const numPeople = city.population;
 
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
