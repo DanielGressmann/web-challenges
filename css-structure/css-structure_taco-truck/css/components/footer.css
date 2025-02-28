@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  top: 0;
+  background: var(--header-bg);
+  color: var(--header-text);
+  margin: 0;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style: none;
+  justify-items: center;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
