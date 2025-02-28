@@ -1,3 +1,17 @@
+function Greeting({ name }) {
+  return (
+    <div className="root">
+      {name == "Danny" ? "Hello, Coach!" : `Hello, ${name}`}
+    </div>
+  );
+}
+
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return (
+    <div>
+      <Greeting name="Björn" />
+      <Greeting name="Danny" />
+      <Greeting name="Arnold Peter der II" />
+    </div>
+  );
 }
