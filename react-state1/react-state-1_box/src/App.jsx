@@ -17,7 +17,8 @@ export default function App() {
       <div className={`box ${isActive ? "box--active" : ""}`} />
       <button onClick={handleClick}>
         {isActive ? "Deaktivieren!" : "Aktivieren!"}
-      </button>
-    </main> //ternery nutzen für BONUS
+      </button>{" "}
+      {/* ternery nutzen für BONUS */}
+    </main>
   );
 }
