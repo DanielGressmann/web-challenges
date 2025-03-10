@@ -1,6 +1,15 @@
 // Find the maximum
 function maxOfTwoNumbers(num1, num2) {
   // TODO:
+  // if (num1 <= num2) {
+  //   return num2;
+  // } else {
+  //   return num1;
+  // }
+  // const maxNumber = num1 <= num2 ? num2 : num1
+  // return maxNumber
+
+  return Math.max(num1, num2);
 }
 
 // Find the longest word
@@ -48,6 +57,11 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
   // TODO:
+  let sum = 0;
+  numbers.forEach((number) => {
+    sum = number + sum; // alt: sum += number;
+  });
+  return sum;
 }
 
 // Calculate the average length of the words
@@ -67,6 +81,17 @@ const words2 = [
 
 function averageWordLength(words) {
   // TODO:
+  if (words === null || words.length === 0) {
+    return null;
+  }
+  let letterLength = 0;
+  let sumWords = words.length;
+
+  words.forEach((word) => {
+    letterLength += word.length;
+  });
+
+  return letterLength / sumWords;
 }
 
 // Unique arrays - return an array without duplicates

@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "author": "J-1000",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.7.0"
   }
 }
