@@ -1,6 +1,5 @@
 import GlobalStyle from "../styles";
-import "../components/Card/Card.css";
-
+import "./index"
 export default function App({ Component, pageProps }) {
   return (
     <>
