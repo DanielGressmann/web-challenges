@@ -8,10 +8,10 @@ const CardWrapper = styled.div`
 `;
 
 const CardTitle = styled.h3`
-    margin-top: 0;
+  margin-top: 0;
   margin-bottom: 12px;
   font-size: 1.25rem;
-}`;
+`;
 
 const CardDesription = styled.p`
   margin-top: 0;
