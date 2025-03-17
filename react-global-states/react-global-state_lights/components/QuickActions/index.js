@@ -22,7 +22,7 @@ export default function QuickActions() {
         type="button"
         onClick={() => {
           console.log("Turn all lights on");
-        }}
+       a }}
       >
         Turn all lights on
       </Button>
