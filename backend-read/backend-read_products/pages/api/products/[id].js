@@ -1,14 +1,15 @@
-import { products } from "../../../lib/products";
-
-export default function handler(request, response) {
+import dbConnect from "@/db/connect";
+import Product from "@/db/models/Product";
+export default async function handler(request, response) {
   const { id } = request.query;
+  await dbConnect();
 
-  const product = products.find((product) => product.id === id);
-
-  if (!product) {
-    response.status(404).json({ status: "Not Found" });
+  if (request.method === "GET") {
+    const data = await Product.findById(id);
+    console.log(data);
+    response.status(200).json(data);
     return;
   }
 
-  response.status(200).json(product);
+  return response.status(405).json({ message: "Method not allowed" });
 }
